@@ -91,11 +91,6 @@ function bootstrap() {
       message: 'Installing build modules...',
       options: buildInstallOptions
     },
-    {
-      command: apmInstallCommand,
-      message: 'Installing apm...',
-      options: apmInstallOptions
-    },
     apmPath + ' clean' + apmFlags,
     moduleInstallCommand,
     dedupeApmCommand + ' ' + packagesToDedupe.join(' '),
